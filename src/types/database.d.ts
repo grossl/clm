@@ -34,30 +34,21 @@ export type Database = {
   };
   public: {
     Tables: {
-      chat_messages: {
+      employees: {
         Row: {
-          chat_session_id: string;
-          content: string | null;
-          created_at: string;
-          id: string;
-          is_user_message: boolean;
-          sources: Json | null;
+          id: string
+          title: string
+          status: "pending" | "completed"
         };
         Insert: {
-          chat_session_id: string;
-          content?: string | null;
-          created_at?: string;
-          id?: string;
-          is_user_message: boolean;
-          sources?: Json | null;
+          id: string
+          title: string
+          status: "pending" | "completed"
         };
         Update: {
-          chat_session_id?: string;
-          content?: string | null;
-          created_at?: string;
-          id?: string;
-          is_user_message?: boolean;
-          sources?: Json | null;
+          id: string
+          title: string
+          status: "pending" | "completed"
         };
         Relationships: [
           {

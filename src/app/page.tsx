@@ -1,5 +1,4 @@
 import 'server-only';
-import Home from "@/app/home";
 import { getSession } from "@/lib/server/supabase";
 import { redirect } from 'next/navigation';
 
@@ -13,6 +12,6 @@ export default async function Page() {
   }
 
   return (
-    <Home />
+    <div></div>
   );
 }
